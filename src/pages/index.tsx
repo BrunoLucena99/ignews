@@ -1,7 +1,7 @@
 import { GetStaticProps } from 'next';
 import { PageTitle } from '../components/PageTitle';
 import { SubscribeButton } from '../components/SubscribeButton';
-import { stripe } from '../services/strapi';
+import { stripe } from '../services/stripe';
 import styles from './home.module.scss';
 
 interface HomeProps {
