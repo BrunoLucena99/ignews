@@ -30,7 +30,7 @@ export function SignInButton() {
       onClick={handleSignOut}
     >
       <FaGithub color="#04b361" />
-      Bruno Henrique
+      {session.user.name}
       <FiX color="#737380" className={styles.closeIcon} />
     </button>
   )
