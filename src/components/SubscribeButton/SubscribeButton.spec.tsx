@@ -5,9 +5,7 @@ import {useRouter} from 'next/router';
 import { SubscribeButton } from '.';
 
 jest.mock('next-auth/client');
-
 jest.mock('next/router');
-
 
 describe('<SubscribeButton />', () => {
   it('renders correctly', () => {
@@ -57,7 +55,7 @@ describe('<SubscribeButton />', () => {
 
     fireEvent.click(subscribeButton)
 
-    expect(pushMock).toHaveBeenCalled();
+    expect(pushMock).toHaveBeenCalledWith('/posts');
   })
 })
 
